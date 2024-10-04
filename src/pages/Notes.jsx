@@ -21,6 +21,7 @@ const notes = () => {
     const sendData = async (e) => {
         e.preventDefault();
         await axios.post("http://localhost:3000/api/notes",data)
+        
     }
     
     
@@ -29,7 +30,7 @@ const notes = () => {
     return (
         <div className='note'>
             <div className="container">
-                <form action="" onChange={handleData}>
+                <form action="submit" onChange={handleData}>
                     <input name="noteId" type="text" placeholder='NoteId' />
                     <input name="title" type="text" placeholder='Title' />
                     <textarea name="content" type="text" placeholder='Content' />
