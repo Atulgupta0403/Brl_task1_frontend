@@ -1,0 +1,26 @@
+.edit_main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+form{
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(50, 50, 40);
+}
+
+.update{
+    cursor: pointer;
+    background-color: aqua;
+    
+}
+.update a{
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: aqua;
+}
