@@ -13,8 +13,8 @@ const notes = () => {
     
     const handleData = (e) => {
         const {name , value} = e.target;
-        console.log(name , " name")
-        console.log(value , " value")
+        // console.log(name , " name")
+        // console.log(value , " value")
         setData((prevData) => ({...prevData , [name] : value}))
     }
 
@@ -24,8 +24,8 @@ const notes = () => {
     }
     
     
+    // console.log(data);
 
-    console.log(data);
     return (
         <div className='note'>
             <div className="container">
