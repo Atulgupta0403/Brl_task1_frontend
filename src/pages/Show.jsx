@@ -29,10 +29,6 @@ const Show = () => {
         await axios.post("http://localhost:3000/api/notes/delete" , {"noteId" : e})
     }
 
-    const send = async (noteId) => {
-        await axios.post("http://localhost:3000/api/edit" ,{"noteId" : noteId} )
-    }
-
     return (
         <div className='show_main'>
             {/* <button className='show_button' onClick={() => (getData())}>GetData</button> */}
@@ -43,7 +39,6 @@ const Show = () => {
                             <h3>{elem.title}</h3>
                             <p>{elem.content}</p>
                             <div className="del">
-                                <button><a href="/edit" onClick={() => send(elem.noteId)}>Edit</a></button>
                                 <button className='delete' onClick={() => sendData(elem.noteId)}>Delete</button>
                             </div>
                         </div>
